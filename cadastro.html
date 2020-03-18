@@ -3,10 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="cadastro.css">
+    <script src="https://kit.fontawesome.com/0dc18696ed.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/cadastro.css">
     <title>Cadastro do Grupo EduCo</title>
 </head>
 <body>
+    <header>
+        <div class="container">
+            <a href="#" class="btn circle shadow" onclick="btnMenu()"><i class="fas fa-bars"></i></a>
+            <a href="index.html" title="Acessar a página inicial do site">
+                <img src="images/logo.original.jpg" alt="Logo do site - Grupo EduCo">
+            </a>
+            <nav id="menu">
+                <ul>
+                    <li><a href="#sobre.html" title="Acessar página Sobre">Sobre</a></li>
+                    <li><a href="#sobre" title="Acessar Página aonde irá conter nossos contatos">Contato</a></li>
+                    <li><a href="cadastroderesponsavel.html" title="Acessar Página de cadastros">Cadastros</a></li>
+                    <li><a href="login.html" title="Acessar página de Login">Login</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
     <div class="container">
         <nav>
             <ul class="menu">
@@ -14,13 +31,26 @@
                     <h1>Você precisa se Cadastrar,<br>se sim qual cadastro deseja?<br>Caso ja tenha se registrado clique <a href="login.html">Aqui!</a></h1>
                 </div>
                 <div class="paginas">                    
-                    <li><a href="cadastroaluno.html">Cadastro de Aluno</a></li>
-                    <li><a href="cadastrodefunicionario.html">Cadastro de Funcionário</a></li>
-                    <li><a href="cadastroresponsavel.html">Cadastro de Responsável</a></li>
+                    <li><a href="cadastrodealuno.html">Cadastro de Aluno</a></li>
+                    <li><a href="cadastrodefuncionario.html">Cadastro de Funcionário</a></li>
+                    <li><a href="cadastroderesponsavel.html">Cadastro de Responsável</a></li>
                     <li><a href="cadastroinstitucional.html">Cadastro Institucional</a></li>
                 </div>    
             </ul>
         </nav>
     </div>
+    <script>
+        function btnMenu() {
+
+            var menu = document.getElementById("menu");
+
+            if (menu.style.display == "none") {
+                menu.style.display = "block";
+            } 
+            else {
+                menu.style.display = "none";
+            }
+        }
+    </script>
 </body>
 </html>
