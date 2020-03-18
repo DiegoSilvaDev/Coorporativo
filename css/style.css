@@ -6,13 +6,13 @@
 .header{
     background-color: #212121;
     width: 100%;
-    height: 88px ;
+    height: 110px ;
    
 
 }
 
 .header img{
-    width: 62px;
+    width: 85px;
 }
 
 h1{
@@ -20,11 +20,6 @@ h1{
     padding: 5px;
     margin-top: 8px;
 }
-.container{
-    display: flex;
-    align-items: center;
-}
-
 .ul{
     display: flex;
     list-style-type: none;
@@ -36,7 +31,7 @@ h1{
 a{
     text-decoration: none;
     color: white;
-    padding: 7px 7px;
+    padding: 12px 7px;
 
 }
 
@@ -44,6 +39,9 @@ a{
     width: 80%;
     margin: 0 auto;
     max-width: 1200px;
+    display: flex;
+    align-items: center;
+    justify-content:space-between ;
 }
 
 body{
@@ -58,13 +56,14 @@ body{
 
 .campo .botao{
     margin: auto;
-    border-radius: 2em;
+    border-radius: 1em;
     width: 150px;
-    height: 50px;
+    height: 62px;
     background-color:#5792B2 ;
     color: white;
     border-width: 2px;
     border-color: black;
+    font-size: 20px;
 }
 .cadastro_1{
     width: 70%;
@@ -83,7 +82,60 @@ input{
     outline: none;
     border-bottom: solid 1px black;
 }
-.fa-bars {
-    font-size: 60px;
+
+.icone .fa-bars{
+    font-size: 70px;
+    color: #5792B2;
 }
 
+.container2 #menu{
+    position: absolute;
+    bottom: 600px;
+    width: 65%;
+    height: 20%;
+    display: none;
+    background-color: #5792B2;
+    border-radius: 0.5em;
+    box-shadow: 4px 4px 18px black;
+    text-transform: uppercase;
+}
+
+#menu li{
+    padding-bottom: 25px;
+}
+
+#menu .menuul{
+    text-decoration: none;
+    list-style-type: none;
+}
+
+#menu ul{
+    padding-top: 12px;
+    padding-left: 20px;
+}
+.footer{
+
+    background-color: #212121;
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1200px;
+    display: flex;
+    align-items: center;
+    justify-content:space-between ;
+}
+
+footer img{
+    width: 80px ;
+}
+
+footer{
+    height: 150px;
+}
+
+.footer a{
+    text-transform: uppercase;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bolder;
+    
+}
