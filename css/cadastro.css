@@ -1,0 +1,81 @@
+:root {
+    --background: #5792B2;
+    --texto: #707070;
+    --preto: #212121;
+    --branco: #fff;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: var(--background);
+    font-size: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--branco);
+}
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 10px;
+}
+nav {
+    height: 500px;
+    background-color: var(--preto);
+    box-sizing: border-box;
+}
+.menu h1 {
+    text-align: center;
+    padding-top: 20px;
+}
+.paginas { 
+    padding: 50px 70px;
+    box-shadow: 1px 1px 5px var(--texto);
+}
+.menu li {
+    font-weight: 500;
+    width: 200px;
+    height: 50px;
+    line-height: 50px;
+    list-style-type: none;
+    text-align: center;
+    background-color: var(--branco);
+    margin: 5px auto;
+    box-sizing: border-box;
+    cursor: pointer;
+    display: block;
+}
+.menu .paginas a{
+    text-decoration: none;
+    padding: 10px 5px;
+}
+.menu  a {
+    color: var(--texto);
+}
+.menu li:hover {
+    transition: 0.5s;
+    background-color: var(--texto);
+}
+.menu a:hover {
+    color: var(--branco);
+}
+@media(min-width: 801px) {
+    .menu li {
+        width: 300px;
+        margin: 5px auto;
+    }
+}
+
+@media(min-width: 1201px) {
+    .menu li {
+        margin: 5px auto;
+        width: 350px;
+    }
+}
+@media(min-width: 1921px) {
+    .menu li {
+        margin: 5px auto;
+        width: 400px;
+    }
+
+}
