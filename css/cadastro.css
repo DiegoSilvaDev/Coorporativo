@@ -15,7 +15,7 @@ body {
     color: var(--branco);
 }
 .desgraca {
-    height: 500px;
+    height: 600px;
 }
 .container {
     width: 80%;
@@ -170,6 +170,9 @@ footer p {
 }
 
 @media(min-width: 1201px) {
+    .desgraca {
+        height: 700px;
+    }
     header .container {
         justify-content: flex-start;
     }
@@ -205,10 +208,12 @@ footer p {
         margin-left: 700px;
     }
 }
-@media(min-width: 1921px) {
+@media(min-width: 1920px) {
     .menu li {
         margin: 5px auto;
         width: 400px;
     }
-
+    .desgraca {
+        height: 803px;
+    }
 }
