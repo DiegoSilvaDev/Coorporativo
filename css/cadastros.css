@@ -13,6 +13,9 @@ body {
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: #707070;
 }
+.desgraca {
+    height: 100%;
+}
 .container {
     margin: auto;
     width: 80%;
@@ -42,10 +45,14 @@ header a {
     text-decoration: none;
     font-size: 1.4em;
 }
-header ul,li{
-    padding: 0 0.8em;
+header #menu {
+    margin-left: 400px;
+    padding-top: 30px;
     list-style-type: none;
-    font-size: 30px;
+    font-size: 25px;
+}
+header #menu li {
+    margin-left: 20px;
 }
 #menu {
     color: var(--branco);
@@ -128,47 +135,39 @@ fieldset input {
 footer {
     background-color: var(--preto);
     box-shadow: 0px -6px 10px var(--preto);
-    min-height: 115px;
+    height: 150px;
     color: #fff;
 }
 footer .container {
-    justify-content: space-between;
     display: flex;
+    justify-content: space-between;
     align-items: center;
+}
+footer .container nav ul {
+    padding-top: 20px;
 }
 footer nav ul {
     list-style-type: none;
 }
 footer nav li {
-    margin-bottom: -0.5em;
+    margin-bottom: 0.4em;
 }
 footer nav li a {
-    font-size: 0.5em;
-    font-weight: bolder;
+    padding-top: 10px;
     text-decoration: none;
-    color: #fff;
+    color: var(--branco);
 }
-footer nav a:hover {
-    border-bottom:solid 1px var(--purple) ;
+footer img {
+    width: 80px;
 }
 footer p {
+    font-size: 0.8em;
     text-align: center;
-    font-size: 0.5em;
-    font-weight: bolder;
-}
-.container div img {
-    margin-left: 20px;
-    justify-content: center;
-    width: 50%;
 }
 .sociais {
-    width: 100%;
-    display: flex;
+    font-size: 2em;
     color: var(--background);
-    align-items: center;
-    font-size: 1.5em;
 }
-
 
 
 @media(min-width:426px){
@@ -190,6 +189,9 @@ footer p {
 }
 
 @media(min-width:1201px){
+    header .container {
+        justify-content: flex-start;
+    }
     header #menu {
         display:block;
     }
@@ -203,4 +205,19 @@ footer p {
         display: flex;
     }
     
+}
+@media(min-width: 1401px) {
+    header #menu {
+        margin-left: 500px;
+    }  
+}
+@media(min-width: 1501px) {
+    header #menu {
+        margin-left: 600px;
+    }
+}
+@media(min-width: 1601px) {
+    header #menu {
+        margin-left: 700px;
+    }
 }
