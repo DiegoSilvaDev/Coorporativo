@@ -48,7 +48,6 @@ header a {
     font-size: 1.4em;
 }
 header #menu {
-    margin-left: 350px;
     padding-top: 30px;
     list-style-type: none;
     font-size: 25px;
@@ -191,6 +190,9 @@ footer p {
     }
     #menu ul {
         display: flex;
+    }
+    header #menu {
+        margin-left: 350px;
     }
 }
 @media(min-width: 1400px) {
