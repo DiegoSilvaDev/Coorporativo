@@ -10,33 +10,56 @@
 </head>
 <body>
     <header>
-        
         <div class="container">
-            <div class="topo">
-            <a href="#" title="Realizar busca no site">
-                <i class="fas fa-bars"></i>
-            </a>
-            <a href="index.html" title="Acessar a página inicial do site">
-                <img src="images/logo.original.jpg" alt="Logo do site ">
-            </a>
+                <a href="#" class="btn circle shadow" onclick="btnMenu()"><i class="fas fa-bars"></i></a>
+                <a href="index.html" title="Acessar a página inicial do site">
+                    <img src="images/logo.original.jpg" alt="Logo do site - Grupo EduCo">
+                </a>               
+            <nav id="menu">
+                <ul>
+                    <li><a href="#sobre.html" title="Acessar página Sobre">Sobre</a></li>
+                    <li><a href="#sobre" title="Acessar Página aonde irá conter nossos contatos">Contato</a></li>
+                    <li><a href="cadastros.html" title="Acessar Página de cadastros">Cadastros</a></li>
+                    <li><a href="login.html" title="Acessar página de Login">Login</a></li>
+                </ul>
+            </nav>
         </div>
-    </div>
     </header>
-    <main>
-        <div class="login">
-        <h1>LOGIN</h1>
-        <div class="campo">
-        <label for="email">email:</label>
-        <input type="text" name="email" id="nome">
-    </div>
-    <div class="campo">
-        <label for="senha">senha:</label>
-        <input type="text" name="senha" id="nome">
-    </div>
-    <button type="submit" class="btn">ENTRAR</button>
-            
-        </div>
-    </main>
+    <main class="desgraca">   
+        <section>
+            <form action="" method="GET" class="form_cadastro">
+                <div>
+                    <h1>Login</h1>
+                </div>
+                <div class="campo">
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email" placeholder="Digite seu Email"  required> 
+                </div>
+                <div class="campo">
+                    <label for="senha">Senha:</label>
+                    <input type="password" name="senha" id="senha" maxlength="8" placeholder="Digite sua Senha" required>
+                </div>
+                <div class="campo">
+                    <button type="submit" class="btn gradient">Entrar</button>
+                </div>
+
+
+            </form>
+        </section>
+    </main>    
+    <script>
+        function btnMenu() {
+
+            var menu = document.getElementById("menu");
+
+            if (menu.style.display == "none") {
+                menu.style.display = "block";
+            } else {
+                menu.style.display = "none";
+            }
+        }
+    </script>
+</body>
     
 <footer>
     <div class="container">
@@ -63,5 +86,4 @@
             </p>
 </footer>
 
-</body>
 </html>
