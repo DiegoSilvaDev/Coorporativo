@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Corporativo</title>
+    <script src="https://kit.fontawesome.com/d755ec8ea5.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container container2">
+
+            <div class="icone">
+                <a href="#" onclick="botaoMenu()">
+                    <i class="fas fa-bars"> </i>
+                </a>
+                
+                <nav id="menu">
+                    <ul class="menuul">
+                        <li><a href="#">Sobre</a></li>
+                        <li><a href="#">Contato</a></li>
+                        <li><a href="#">Cadastros</a></li>
+                        <li><a href="#">Login</a></li>
+
+                    </ul>
+                </nav>
+            </div>
+
+            <a class="a" href="index.html" title="Acessar a página inicial do site">
+                <img src="images/logo.original.jpg" alt="Logo do site">
+            </a>
+
+        </div>
+
+        
+    </header>
+
+    <!-- Inicio do Formulário -->
+
+
+    <form action="" method="GET" class="cadastro_1">
+
+        <div class="CDI">
+            <h1>
+                Cadastro de Instituição
+            </h1>
+
+            <div class="campo">
+                <label for="codigo">Código:</label>
+                <input type="text" name="codigoins" id="codigo">
+
+            </div>
+
+            <div class="campo">
+                <label for="instituição">Nome da Instituição:</label>
+                <input type="text" name="nameins" id="instituição">
+
+            </div>
+
+            <div class="campo">
+                <label for="pais">Unidade(local):</label>
+                <select name="pais" id="pais">
+                    <option value="SP">São Paulo</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="MG">Minas Gerais</option>
+                    <option value="BA">Bahia</option>
+                    <option value="SE">Sergipe</option>
+                    <option value="CE">Ceará</option>
+                    <option value="RS">Rio Grande do Sul</option>
+                    <option value="SC">Santa Catarina</option>
+                    <option value="PR">Paraná</option>
+                    <option value="AM">Amazonas</option>
+                    <option value="AC">Acre</option>
+                    <option value="RR">Roraima</option>
+                    <option value="TO">Tocantis</option>
+                    <option value="MT">Mato Grosso</option>
+                    <option value="MS">Mato Grosso do Sul</option>
+                </select>
+            </div>
+
+            <div class="campo">
+                <label for="cidade">Cidade - UF: </label>
+                <input type="text" name="cidade" id="cidade">
+
+            </div>
+
+            <div class="campo">
+                <label for="telefone">Telefone:</label>
+                <input type="text" name="telefonepessoal" id="telefone">
+
+            </div>
+
+            <div class="campo">
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email">
+
+            </div>
+
+            <div class="campo_termos">
+                <input type="checkbox" name="termos" id="termos">
+                <label for="termos">Li e aceito os termos de uso.</label>
+
+            </div>
+
+            <div class="campo">
+                <button type="submit" class="botao">Cadastrar </button>
+
+            </div>
+
+    </form>
+
+    </div>
+
+    <script>
+        function botaoMenu() {
+            var m = document.getElementById("menu");
+            if (m.style.display == "block") {
+                m.style.display = "none";
+            } else {
+                m.style.display = "block";
+            }
+        }
+    </script>
+
+<footer>
+    <div class="container">
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="contato.html">Contato</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+        <div>
+            <img src="Images/logo.original.jpg" alt="Logo do projeto Grupo EduCo">
+        </div>
+            <div class="sociais">
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-twitter"></i>
+            </div>
+            <!--Fim Container-->
+        </div>
+            <p>
+                Todos os direitos reservados - Grupo EduCo 
+            </p>
+</footer>
+
+</body>
+
+
+</html>
