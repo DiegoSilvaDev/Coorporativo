@@ -207,6 +207,21 @@ footer p {
     .desgraca {
         height: 600px;
     }
+    .form_cadastro .btn {
+        margin-left: 170px;
+    }
+    .form_cadastro {
+        max-width: 600px;
+    }
+    fieldset label, input {
+        margin-left: 0.6em;
+    }
+    .campo legend, label {
+        font-size: 1.5em;
+    }
+    .form_cadastro .campo input {
+        font-size: 1.5em;
+    }
     
 }
 @media(min-width: 1401px) {
